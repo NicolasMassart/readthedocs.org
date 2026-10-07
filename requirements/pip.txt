@@ -1,34 +1,34 @@
 # Base packages
-pip==19.0.3
+pip==26.2
 appdirs==1.4.3
-virtualenv==16.4.3
+virtualenv==21.7.13
 
-django==1.11.20  # pyup: <1.12
+django==5.2.17  # pyup: <1.12
 django-tastypie==0.14.2
 django-guardian==1.5.0
 django-extensions==2.1.6
 
-djangorestframework==3.9.2
+djangorestframework==3.17.2
 
 # For intersphinx during builds
 Sphinx==1.8.4
 
 # Filtering for the REST API
-django-filter==2.1.0
+django-filter==26.2
 
 django-vanilla-views==1.0.6
 jsonfield==2.0.2
 
-requests==2.21.0
+requests==2.33.0
 requests-toolbelt==0.9.1
 slumber==0.7.1
-pyyaml==3.13
-Pygments==2.3.1
+pyyaml==6.0.3
+Pygments==2.20.0
 
 # These has to be removed once APIv1 is removed
 # https://github.com/rtfd/readthedocs.org/pull/5293
 # https://github.com/rtfd/readthedocs.org/pull/3082
-lxml==4.3.1
+lxml==6.1.0
 defusedxml==0.5.0
 
 # Basic tools
@@ -38,9 +38,9 @@ defusedxml==0.5.0
 redis==2.10.6  # pyup: ignore
 # Celery 4.2 is incompatible with our code
 # when ALWAYS_EAGER = True
-celery==4.1.1  # pyup: ignore
+celery==5.6.3  # pyup: ignore
 
-django-allauth==0.39.1
+django-allauth==65.14.1
 
 # GitPython 2.1.11 makes TestGitBackend.test_git_tags to fail because
 # of an UnicodeError
@@ -49,7 +49,7 @@ django-allauth==0.39.1
 # introduces the usage of ``str`` which behaves differently in Py2 and
 # Py3 We should check if all the tests pass again when we drop Py2
 # support and we should be able to upgrade
-GitPython==2.1.10  # pyup: ignore
+GitPython==3.1.62  # pyup: ignore
 
 # Search
 elasticsearch==6.3.1
